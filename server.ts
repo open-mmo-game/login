@@ -1,9 +1,11 @@
-import { Application } from "oak";
+import { Application, Router } from "oak";
+
+import env from "./app/env.ts";
+
+import router from "./routes/index.ts";
 
 const app = new Application();
 
-app.use((ctx) => {
-  ctx.response.body = "Hello World!";
-});
+app.use(router.allowedMethods(), router.routes());
 
-await app.listen({ port: 8080 });
+await app.listen({ port: Number(env.PORT || 8080) });
