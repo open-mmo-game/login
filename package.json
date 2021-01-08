@@ -1,0 +1,21 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Login server for MMO game",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "deno run --unstable --importmap=import_map.json --allow-all server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-mmo-game/login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/open-mmo-game/login/issues"
+  },
+  "homepage": "https://github.com/open-mmo-game/login#readme"
+}
